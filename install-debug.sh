@@ -110,8 +110,8 @@
     
     if [ -f /usr/sbin/apache2 ]; then
     echo -e "Removing apache..."
-    apt-get -y purge apache2 apache2-*
-    apt-get -y --purge autoremove
+    sudo apt-get -y purge apache2 apache2-*
+    sudo apt-get -y --purge autoremove
     fi
 
     sudo apt -y install nginx
